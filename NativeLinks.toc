@@ -1,0 +1,10 @@
+## Interface: 50300
+## Title: Native Links
+## Notes: Automatically translates item, spell, achievement etc. links into your native client language.
+## Author: nand
+## Version: 0
+
+libs\LibLambda.lua
+libs\ChatFilters.lua
+
+NativeLinks.lua
