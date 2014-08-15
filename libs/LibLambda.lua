@@ -6,7 +6,7 @@ local function append (x_, y)
 
 -- Function composition
 local comp = function (f, g) return
-  lam ( type(g)=="function" and 0 or g.n
+  lam ( type (g) == "function" and 0 or g.n
       , function (...) return f (g (...)) end) end
 
 -- Possibly partial function application
@@ -36,8 +36,8 @@ flip = lam (3, function (f, x, y, ...) return f (y, x, ...) end)
 
 -- Takes a lambda (or function) and returns an actual function, for interop
 -- with impure code
-lowerFun = lam (1, function (f) return
-  type (f) == "table" and f.f or f end)
+lowerFun = lam (0, function (f) return
+  f.f or f end)
 
 -- First-class bottom
 bot = setmetatable ({__bot = true},

@@ -1,4 +1,4 @@
-## Interface: 50300
+## Interface: 50400
 ## Title: Native Links
 ## Notes: Automatically translates item, spell, achievement etc. links into your native client language.
 ## Author: nand
